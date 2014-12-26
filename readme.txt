@@ -11,7 +11,7 @@ This plugin automatically removes wp-config-sample.php, readme.html and license 
 
 == Description ==
 
-We found ourselves manually deleting wp-config-sample.php, readme.html, and license.txt every time we updated a WordPress site. If you're maintaining multiple WordPress sites like us, this can get tedious. So instead, we developed this plugin to take care of deleting these files for us. 
+When WordPress is updated, it re-installs wp-config-sample.php, readme files, and license files even though you may have deleted them before. We found ourselves manually deleting these files every time we updated a WordPress site. If you're maintaining multiple WordPress sites like us, this can get tedious. So instead, we developed this plugin to automatically delete these files every time we update a WordPress site. 
 
 This plugin automatically removes wp-config-sample.php, readme.html, and license.txt, both default versions and localized versions like licens-sv_SE.txt and lisenssi.html, among others, when WordPress is updated.
 
