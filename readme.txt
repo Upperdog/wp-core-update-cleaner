@@ -2,10 +2,11 @@
 Contributors: Upperdog, Gesen
 Tags: update, upgrade, core, 
 Requires at least: 3.3
-Tested up to: 4.9
+Tested up to: 5.0
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Donate link: https://paypal.me/gesen
 
 This plugin automatically removes wp-config-sample.php, readme.html and license files, both default and localized versions, when WordPress is updated.
 
