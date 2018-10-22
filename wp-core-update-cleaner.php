@@ -55,8 +55,6 @@ class WPCoreUpdateCleaner {
 	 */
 	function core_update_cleaner() {
 
-		error_log( 'Running update cleaner…' );
-		
 		global $action;
 		
 		// Determine if update feedback message should be shown
@@ -91,7 +89,6 @@ class WPCoreUpdateCleaner {
 					if ( $show_message ) {
 						show_message( __( 'Removing', 'wp-core-update-cleaner' ) . ' ' . $file . '...' );
 					}
-					error_log( 'Removing ' . $file );
 				}
 			}
 		}
