@@ -52,6 +52,9 @@ class WPCoreUpdateCleaner {
 	
 	/**
 	 * Core update cleaner
+	 *
+	 * @since 1.0
+	 * @since 1.1.0 Renamed function, refactored and enabled update cleaner for automatic core updates.
 	 */
 	function core_update_cleaner() {
 
