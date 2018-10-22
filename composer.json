@@ -1,0 +1,24 @@
+{
+    "name": "upperdog/wp-core-update-cleaner",
+    "description": "This plugin automatically removes some files in the root folder, like wp-config-sample.php, readme and license files, when WordPress is manually or automatically updated.",
+    "homepage": "https://github.com/upperdog/wp-core-update-cleaner",
+    "license": "GPL-2.0-or-later",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Upperdog",
+            "email": "hello@upperdog.com"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "plugin", 
+        "update"
+    ],
+    "support": {
+        "issues": "https://github.com/upperdog/wp-core-update-cleaner/issues"
+    },
+    "require": {
+        "composer/installers": "^1.6"
+    }
+}
