@@ -60,7 +60,7 @@ class WPCoreUpdateCleaner {
 
 		global $action;
 		
-		// Determine if update feedback message should be shown
+		// Show update feedback for manual updates
 		if ( 'do-core-upgrade' == $action || 'do-core-reinstall' == $action ) {	
 			$show_message = true;
 		} else {
