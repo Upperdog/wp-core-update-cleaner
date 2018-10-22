@@ -11,7 +11,9 @@
         }
     ],
     "keywords": [
-        "wordpress"
+        "wordpress",
+        "plugin", 
+        "update"
     ],
     "support": {
         "issues": "https://github.com/upperdog/wp-core-update-cleaner/issues"
