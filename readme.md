@@ -2,14 +2,16 @@
 
 When WordPress is updated, it re-installs wp-config-sample.php, readme files, and license files even though you may have deleted them before. You don't have to remove these files, but you may want to if you don't want them to expose your WordPress version or if you just like to keep things neat and clean.
 
-This plugin automatically removes these files when WordPress is manually or automatically updated. The files that are removed are: 
+This plugin automatically removes these files when WordPress is manually or automatically updated. For manual updates, the files are removed instantly during the update process. For automatic updates, the files are removed in a scheduled cron job that runs 15 minutes after the update. 
+
+Files that are removed:
 
 * wp-config-sample.php
 * License files, both default and localized
 * Readme files, both default and localized
 * wp-admin/install.php
 
-___Don't install this plugin if you're using a plugin or service to scan your site to verify checksums on the core files. It might result in warnings.___
+___You may not want to install this plugin if you're using a plugin or service to scans your site to verify checksums on the core files. When the removed files are missing it might result in warnings.___
 
 ## Installation
 
