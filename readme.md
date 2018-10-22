@@ -32,6 +32,7 @@ You don't have to delete these files if you want to keep them for some reason. H
 
 * Add wp-admin/install.php to the list of files to remove.
 * Add support for running the plugin on automatic core updates.
+* Enable installation with Composer.
 
 ### 1.0
 
