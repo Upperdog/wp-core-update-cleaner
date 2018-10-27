@@ -1,6 +1,6 @@
 # WP Core Update Cleaner
 
-When WordPress is updated, it re-installs wp-config-sample.php, readme files, and license files even though you may have deleted them before. This plugin automatically removes these files when WordPress is manually or automatically updated. Removing these files is not mandatory, but you may want to if you don't want them to expose your WordPress version or if you just like to keep things neat and clean. 
+When WordPress is updated, it re-installs wp-config-sample.php, readme files, and license files even though you may have deleted them before. This plugin automatically removes these files when WordPress is manually or automatically updated. It also removes these files when activating the plugin for the first time. Removing these files is not mandatory, but you may want to if you don't want them to expose your WordPress version or if you just like to keep things neat and clean. 
 
 Files that are removed:
 
@@ -27,6 +27,10 @@ We found ourselves manually deleting wp-config-sample.php, readme.html, and lice
 You don't have to delete these files if you want to keep them for some reason. However, the readme file contains the version number of the WordPress version you're running. This may be used by bots or evil people trying to hurt your site by taking advantage of security exploits in your version if you've not installed security patches. Also, there's no reason to have wp-config-sample.php and the license files just laying around.
 
 ## Changelog
+
+### 1.2.0 (2018-10-27)
+
+* Remove files when plugin is activated so site admins don't have to wait for the next core update for the files to be removed.
 
 ### 1.1.0 (2018-10-22)
 

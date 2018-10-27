@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Core Update Cleaner
  * Description: This plugin automatically removes some files in the root folder, like wp-config-sample.php, readme and license files, when WordPress is manually or automatically updated.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Upperdog
  * Author URI: https://upperdog.com
  * Author Email: hello@upperdog.com
@@ -37,8 +37,18 @@ class WPCoreUpdateCleaner {
 	 * @since 1.0
 	 */
 	function __construct() {
+		register_activation_hook( __FILE__, array( $this, 'plugin_activation' ) );
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
 		add_action( '_core_updated_successfully', array( $this, 'core_update_cleaner' ) );
+	}
+	
+	/**
+	 * Plugin activation
+	 *
+	 * @since 1.2.0
+	 */
+	function plugin_activation() {
+		$this->core_update_cleaner();
 	}
 
 	/**
